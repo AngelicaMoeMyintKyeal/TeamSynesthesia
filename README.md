@@ -43,13 +43,13 @@ Write description of the game.
   - https
 
   ```sh
-  git clone https://github.com/AngelicaMoeMyintKyeal/Synesthesia.git
+  git clone git@github.com:AngelicaMoeMyintKyeal/TeamSynthesthesia.git
   ```
 
   - ssh
   
   ```sh
-  git clone git@github.com:AngelicaMoeMyintKyeal/Synesthesia.git
+  git clone git@github.com:AngelicaMoeMyintKyeal/TeamSynesthesia.git
   ```
 
 2. Open the `.xcodeproj` file.
