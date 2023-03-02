@@ -64,7 +64,7 @@ class GamePad {
 //            guard let strongController = weakController else {
 //                return
 //            }
-            if pressed {
+            if pressed && self.delegate?.isJumping == false {
                 print("jump")
                 self.delegate?.jump()
             }
@@ -94,5 +94,6 @@ class GamePad {
 }
 
 protocol InputDelegate: AnyObject {
+    var isJumping: Bool { get }
     func jump()
 }

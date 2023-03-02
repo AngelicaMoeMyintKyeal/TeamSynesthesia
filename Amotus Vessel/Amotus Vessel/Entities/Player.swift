@@ -9,6 +9,8 @@ import SpriteKit
 import GameplayKit
 
 class Player: GKEntity, InputDelegate {
+    var isJumping = false
+    
     /// Create a Player from a String corresponding to the file name of the texture
     init(imageName: String) {
         super.init()
@@ -42,8 +44,11 @@ class Player: GKEntity, InputDelegate {
     }
     
     func jump() {
+        isJumping = true
         if let spriteComponent = self.component(ofType: Sprite.self) {
-            spriteComponent.node.run(SKAction.moveTo(y: 50, duration: 1.0))
+            spriteComponent.node.run(SKAction.moveTo(y: 70, duration: 1.0)) {
+                self.isJumping = false
+            }
         }
     }
 }
