@@ -54,6 +54,7 @@
 		88633C7329AFA5440095FFED /* Sprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
 		88633C7529AFA5A30095FFED /* Physics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
 		88633C7729AFA7EC0095FFED /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		887D077229B0DF7D00BBD0D5 /* Amotus-Vessel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Amotus-Vessel-Info.plist"; sourceTree = SOURCE_ROOT; };
 		ACC2785129B0AA3A00827910 /* PrologueIta.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = PrologueIta.mov; sourceTree = "<group>"; };
 		ACC2785229B0AA3A00827910 /* PrologueEng.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = PrologueEng.mov; sourceTree = "<group>"; };
 		ACC2785629B0AAA500827910 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 		88633C4B29AF8BC00095FFED /* Amotus Vessel */ = {
 			isa = PBXGroup;
 			children = (
+				887D077229B0DF7D00BBD0D5 /* Amotus-Vessel-Info.plist */,
 				ACC2785229B0AA3A00827910 /* PrologueEng.mov */,
 				ACC2785129B0AA3A00827910 /* PrologueIta.mov */,
 				88633C4C29AF8BC00095FFED /* Amotus_VesselApp.swift */,
@@ -460,6 +462,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Amotus-Vessel-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,6 +491,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Amotus-Vessel-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
