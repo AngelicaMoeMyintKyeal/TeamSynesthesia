@@ -11,36 +11,35 @@ import SwiftUI
 struct IntroVideoView: View {
        
     var deviceLang: String
-
-    let videoPlayerEng = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoEng", withExtension: "mov")!)
-    let videoPlayerIta = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoIta", withExtension: "mov")!)
-    let videoPlayerKorean = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoEng", withExtension: "mov")!)
+    @StateObject var videoPlayerManager = VideoPlayerManager()
+    
     var body: some View {
         
-            VStack {
+            ZStack {
 //                AVPlayerControllerRepresented(videoPlayer: videoPlayer)
                 
                 switch deviceLang {
-                case ParameterConstants.englishLanguage:
-                    AVPlayerControllerRepresented(videoPlayer: videoPlayerEng)
+                case ParameterConstants.englishLanguage: AVPlayerControllerRepresented(videoPlayer:         videoPlayerManager.videoPlayerEng)
                 case ParameterConstants.italianLanguage:
-                    AVPlayerControllerRepresented(videoPlayer: videoPlayerIta)
+                    AVPlayerControllerRepresented(videoPlayer: videoPlayerManager.videoPlayerIta)
                 case ParameterConstants.koreanLanguage:
-                    AVPlayerControllerRepresented(videoPlayer: videoPlayerKorean)
+                    AVPlayerControllerRepresented(videoPlayer: videoPlayerManager.videoPlayerKorean)
                 default:
-                    AVPlayerControllerRepresented(videoPlayer: videoPlayerEng)
+                    AVPlayerControllerRepresented(videoPlayer: videoPlayerManager.videoPlayerEng)
                 }
+                
+                SkipButtonView()
             }
             .onAppear() {
                 switch deviceLang {
                 case ParameterConstants.englishLanguage:
-                    videoPlayerEng.play()
+                    videoPlayerManager.playEngVideo()
                 case ParameterConstants.italianLanguage:
-                    videoPlayerIta.play()
+                    videoPlayerManager.playItaVideo()
                 case ParameterConstants.koreanLanguage:
-                    videoPlayerKorean.play()
+                    videoPlayerManager.playKoreanVideo()
                 default:
-                    videoPlayerEng.play()
+                    videoPlayerManager.playEngVideo()
                 }
             }
     }
@@ -66,3 +65,37 @@ struct AVPlayerControllerRepresented : NSViewRepresentable {
 //        IntroVideoView()
 //    }
 //}
+
+struct SkipButtonView: View {
+    
+    var body: some View {
+    
+        GeometryReader { geometry in
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button(
+                        action: {
+                            // write action
+                            print("Skip Button is Clicked")
+                        },
+                        label: {
+                            VStack(alignment: .center) {
+                                Image("SkipButton")
+//                                    .resizable()
+//                                    .padding()
+                                    .aspectRatio(contentMode: .fit)
+                                .frame(maxWidth: geometry.size.width / 10)
+                            }
+                        }
+                    )
+                    .frame(height: 44)
+                    .padding(.horizontal, 20)
+                    .cornerRadius(8)
+                    Spacer()
+                }
+            }
+        }
+    }
+}
