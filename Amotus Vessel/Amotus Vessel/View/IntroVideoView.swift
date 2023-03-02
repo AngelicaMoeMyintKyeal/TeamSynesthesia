@@ -9,28 +9,20 @@ import AVKit
 import SwiftUI
 
 struct IntroVideoView: View {
-    
+        
     var body: some View {
         
-        NavigationView() {
             VStack {
-//                VideoPlayer(player: player)
-//                    .onAppear()
-//                VideoPlayer(
-//                    player: AVPlayer(url: URL(fileURLWithPath: engIntroVideoPath)))
+                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "IntroVideoEng", withExtension: "mov")!)).edgesIgnoringSafeArea(.all)
             }
-        }
     }
 }
 
-/*
- Bundle.main.url(forResource: "video", withExtension: "mp4")!)
- */
-struct IntroVideoView_Previews: PreviewProvider {
-    static var previews: some View {
-        IntroVideoView()
-    }
-}
+//struct IntroVideoView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        IntroVideoView()
+//    }
+//}
 
 
 /*

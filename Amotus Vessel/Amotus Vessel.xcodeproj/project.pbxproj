@@ -33,8 +33,8 @@
 		ACC2786F29B0AB9300827910 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACC2786B29B0AB9300827910 /* Localizable.strings */; };
 		ACC2787429B0B53B00827910 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2787329B0B53B00827910 /* MenuView.swift */; };
 		ACC2787629B11CAD00827910 /* IntroVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2787529B11CAD00827910 /* IntroVideoView.swift */; };
-		ACC2788129B129A300827910 /* IntroVideoEng.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ACC2787F29B129A300827910 /* IntroVideoEng.mp4 */; };
-		ACC2788229B129A300827910 /* IntroVideoIta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ACC2788029B129A300827910 /* IntroVideoIta.mp4 */; };
+		ACC2788529B12E6200827910 /* IntroVideoIta.mov in Resources */ = {isa = PBXBuildFile; fileRef = ACC2788329B12E6200827910 /* IntroVideoIta.mov */; };
+		ACC2788629B12E6200827910 /* IntroVideoEng.mov in Resources */ = {isa = PBXBuildFile; fileRef = ACC2788429B12E6200827910 /* IntroVideoEng.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,8 +68,8 @@
 		ACC2786E29B0AB9300827910 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ACC2787329B0B53B00827910 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		ACC2787529B11CAD00827910 /* IntroVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVideoView.swift; sourceTree = "<group>"; };
-		ACC2787F29B129A300827910 /* IntroVideoEng.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = IntroVideoEng.mp4; path = ../../../../../IntroVideoEng.mp4; sourceTree = "<group>"; };
-		ACC2788029B129A300827910 /* IntroVideoIta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = IntroVideoIta.mp4; path = ../../../../../IntroVideoIta.mp4; sourceTree = "<group>"; };
+		ACC2788329B12E6200827910 /* IntroVideoIta.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = IntroVideoIta.mov; path = ../../../../../IntroVideoIta.mov; sourceTree = "<group>"; };
+		ACC2788429B12E6200827910 /* IntroVideoEng.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = IntroVideoEng.mov; path = ../../../../../IntroVideoEng.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,8 @@
 		88633C4B29AF8BC00095FFED /* Amotus Vessel */ = {
 			isa = PBXGroup;
 			children = (
-				ACC2787F29B129A300827910 /* IntroVideoEng.mp4 */,
-				ACC2788029B129A300827910 /* IntroVideoIta.mp4 */,
+				ACC2788429B12E6200827910 /* IntroVideoEng.mov */,
+				ACC2788329B12E6200827910 /* IntroVideoIta.mov */,
 				88633C4C29AF8BC00095FFED /* Amotus_VesselApp.swift */,
 				88633C4E29AF8BC00095FFED /* ContentView.swift */,
 				ACC2787229B0B21500827910 /* View */,
@@ -275,14 +275,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC2788629B12E6200827910 /* IntroVideoEng.mov in Resources */,
 				ACC2786329B0AAA500827910 /* OnboardingParticle.sks in Resources */,
 				88633C6A29AF93730095FFED /* FinalBossLevel.sks in Resources */,
 				ACC2785E29B0AAA500827910 /* FlameParticle.sks in Resources */,
 				ACC2786F29B0AB9300827910 /* Localizable.strings in Resources */,
-				ACC2788129B129A300827910 /* IntroVideoEng.mp4 in Resources */,
 				88633C5429AF8BC20095FFED /* Preview Assets.xcassets in Resources */,
 				ACC2785D29B0AAA500827910 /* Rain.sks in Resources */,
-				ACC2788229B129A300827910 /* IntroVideoIta.mp4 in Resources */,
+				ACC2788529B12E6200827910 /* IntroVideoIta.mov in Resources */,
 				88633C6129AF8DE80095FFED /* Assets.xcassets in Resources */,
 				ACC2785F29B0AAA500827910 /* SmokeParticle.sks in Resources */,
 				88633C5129AF8BC20095FFED /* Assets.xcassets in Resources */,

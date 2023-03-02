@@ -11,7 +11,8 @@ import SwiftUI
 struct GamemotionApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            IntroVideoView()
         }
     }
 }
