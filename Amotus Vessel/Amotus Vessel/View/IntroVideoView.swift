@@ -9,15 +9,39 @@ import AVKit
 import SwiftUI
 
 struct IntroVideoView: View {
-        
-    let videoPlayer = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoEng", withExtension: "mov")!)
+       
+    var deviceLang: String
+
+    let videoPlayerEng = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoEng", withExtension: "mov")!)
+    let videoPlayerIta = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoIta", withExtension: "mov")!)
+    let videoPlayerKorean = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoEng", withExtension: "mov")!)
     var body: some View {
         
             VStack {
-                AVPlayerControllerRepresented(videoPlayer: videoPlayer)
+//                AVPlayerControllerRepresented(videoPlayer: videoPlayer)
+                
+                switch deviceLang {
+                case ParameterConstants.englishLanguage:
+                    AVPlayerControllerRepresented(videoPlayer: videoPlayerEng)
+                case ParameterConstants.italianLanguage:
+                    AVPlayerControllerRepresented(videoPlayer: videoPlayerIta)
+                case ParameterConstants.koreanLanguage:
+                    AVPlayerControllerRepresented(videoPlayer: videoPlayerKorean)
+                default:
+                    AVPlayerControllerRepresented(videoPlayer: videoPlayerEng)
+                }
             }
             .onAppear() {
-                videoPlayer.play()
+                switch deviceLang {
+                case ParameterConstants.englishLanguage:
+                    videoPlayerEng.play()
+                case ParameterConstants.italianLanguage:
+                    videoPlayerIta.play()
+                case ParameterConstants.koreanLanguage:
+                    videoPlayerKorean.play()
+                default:
+                    videoPlayerEng.play()
+                }
             }
     }
 }
@@ -42,37 +66,3 @@ struct AVPlayerControllerRepresented : NSViewRepresentable {
 //        IntroVideoView()
 //    }
 //}
-
-
-/*
- import Foundation
- import SpriteKit
-
- class VideoManager: SKNode {
-     
-     var entityManager: EntityManager!
-     var deviceLanguage = Locale.current.languageCode
-
-     func languageForVideo(deviceLang: String) {
-         switch deviceLang {
-         case ParameterConstants.englishLanguage:
-             playPrologueVideo(fileName: ParameterConstants.englishPrologueVid)
-         case ParameterConstants.italianLanguage:
-             playPrologueVideo(fileName: ParameterConstants.italianPrologueVid)
-         case ParameterConstants.koreanLanguage:
-             playPrologueVideo(fileName: ParameterConstants.koreanPrologueVid)
-         default:
-             playPrologueVideo(fileName: ParameterConstants.englishPrologueVid)
-         }
-     }
-     
-     func playPrologueVideo(fileName: String) {
-         let prologueVideo = SKVideoNode(fileNamed: fileName)
-         prologueVideo.position = CGPoint(x: frame.midX, y: frame.midY)
-         addChild(prologueVideo)
-         prologueVideo.play()
-     }
-     
- }
-
- */
