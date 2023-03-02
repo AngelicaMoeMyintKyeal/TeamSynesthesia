@@ -10,11 +10,30 @@ import SwiftUI
 
 struct IntroVideoView: View {
         
+    let videoPlayer = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoEng", withExtension: "mov")!)
     var body: some View {
         
             VStack {
-                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "IntroVideoEng", withExtension: "mov")!)).edgesIgnoringSafeArea(.all)
+                AVPlayerControllerRepresented(videoPlayer: videoPlayer)
             }
+            .onAppear() {
+                videoPlayer.play()
+            }
+    }
+}
+
+struct AVPlayerControllerRepresented : NSViewRepresentable {
+    var videoPlayer : AVPlayer
+    
+    func makeNSView(context: Context) -> AVPlayerView {
+        let view = AVPlayerView()
+        view.controlsStyle = .none
+        view.player = videoPlayer
+        return view
+    }
+    
+    func updateNSView(_ nsView: AVPlayerView, context: Context) {
+        
     }
 }
 
