@@ -21,8 +21,6 @@
 		88633C7429AFA5440095FFED /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7329AFA5440095FFED /* Sprite.swift */; };
 		88633C7629AFA5A30095FFED /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7529AFA5A30095FFED /* Physics.swift */; };
 		88633C7829AFA7EC0095FFED /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7729AFA7EC0095FFED /* Platform.swift */; };
-		ACC2785329B0AA3A00827910 /* PrologueIta.mov in Resources */ = {isa = PBXBuildFile; fileRef = ACC2785129B0AA3A00827910 /* PrologueIta.mov */; };
-		ACC2785429B0AA3A00827910 /* PrologueEng.mov in Resources */ = {isa = PBXBuildFile; fileRef = ACC2785229B0AA3A00827910 /* PrologueEng.mov */; };
 		ACC2785D29B0AAA500827910 /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = ACC2785629B0AAA500827910 /* Rain.sks */; };
 		ACC2785E29B0AAA500827910 /* FlameParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = ACC2785729B0AAA500827910 /* FlameParticle.sks */; };
 		ACC2785F29B0AAA500827910 /* SmokeParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = ACC2785829B0AAA500827910 /* SmokeParticle.sks */; };
@@ -33,8 +31,10 @@
 		ACC2786629B0AB1300827910 /* ParameterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2786529B0AB1300827910 /* ParameterConstants.swift */; };
 		ACC2786929B0AB1C00827910 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2786829B0AB1C00827910 /* LocalizationSystem.swift */; };
 		ACC2786F29B0AB9300827910 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACC2786B29B0AB9300827910 /* Localizable.strings */; };
-		ACC2787129B0ABE400827910 /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2787029B0ABE400827910 /* VideoManager.swift */; };
 		ACC2787429B0B53B00827910 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2787329B0B53B00827910 /* MenuView.swift */; };
+		ACC2787629B11CAD00827910 /* IntroVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2787529B11CAD00827910 /* IntroVideoView.swift */; };
+		ACC2788529B12E6200827910 /* IntroVideoIta.mov in Resources */ = {isa = PBXBuildFile; fileRef = ACC2788329B12E6200827910 /* IntroVideoIta.mov */; };
+		ACC2788629B12E6200827910 /* IntroVideoEng.mov in Resources */ = {isa = PBXBuildFile; fileRef = ACC2788429B12E6200827910 /* IntroVideoEng.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +54,6 @@
 		88633C7329AFA5440095FFED /* Sprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
 		88633C7529AFA5A30095FFED /* Physics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
 		88633C7729AFA7EC0095FFED /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
-		ACC2785129B0AA3A00827910 /* PrologueIta.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = PrologueIta.mov; sourceTree = "<group>"; };
-		ACC2785229B0AA3A00827910 /* PrologueEng.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = PrologueEng.mov; sourceTree = "<group>"; };
 		ACC2785629B0AAA500827910 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
 		ACC2785729B0AAA500827910 /* FlameParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FlameParticle.sks; sourceTree = "<group>"; };
 		ACC2785829B0AAA500827910 /* SmokeParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SmokeParticle.sks; sourceTree = "<group>"; };
@@ -68,8 +66,10 @@
 		ACC2786C29B0AB9300827910 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ACC2786D29B0AB9300827910 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ACC2786E29B0AB9300827910 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
-		ACC2787029B0ABE400827910 /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
 		ACC2787329B0B53B00827910 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		ACC2787529B11CAD00827910 /* IntroVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVideoView.swift; sourceTree = "<group>"; };
+		ACC2788329B12E6200827910 /* IntroVideoIta.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = IntroVideoIta.mov; path = ../../../../../IntroVideoIta.mov; sourceTree = "<group>"; };
+		ACC2788429B12E6200827910 /* IntroVideoEng.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = IntroVideoEng.mov; path = ../../../../../IntroVideoEng.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,8 @@
 		88633C4B29AF8BC00095FFED /* Amotus Vessel */ = {
 			isa = PBXGroup;
 			children = (
-				ACC2785229B0AA3A00827910 /* PrologueEng.mov */,
-				ACC2785129B0AA3A00827910 /* PrologueIta.mov */,
+				ACC2788429B12E6200827910 /* IntroVideoEng.mov */,
+				ACC2788329B12E6200827910 /* IntroVideoIta.mov */,
 				88633C4C29AF8BC00095FFED /* Amotus_VesselApp.swift */,
 				88633C4E29AF8BC00095FFED /* ContentView.swift */,
 				ACC2787229B0B21500827910 /* View */,
@@ -164,7 +164,6 @@
 				88633C6529AF8FBC0095FFED /* GamePad.swift */,
 				88633C6B29AF9F8F0095FFED /* SceneManager.swift */,
 				88633C6D29AFA4850095FFED /* EntityManager.swift */,
-				ACC2787029B0ABE400827910 /* VideoManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC2787329B0B53B00827910 /* MenuView.swift */,
+				ACC2787529B11CAD00827910 /* IntroVideoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,14 +275,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC2788629B12E6200827910 /* IntroVideoEng.mov in Resources */,
 				ACC2786329B0AAA500827910 /* OnboardingParticle.sks in Resources */,
 				88633C6A29AF93730095FFED /* FinalBossLevel.sks in Resources */,
 				ACC2785E29B0AAA500827910 /* FlameParticle.sks in Resources */,
 				ACC2786F29B0AB9300827910 /* Localizable.strings in Resources */,
 				88633C5429AF8BC20095FFED /* Preview Assets.xcassets in Resources */,
 				ACC2785D29B0AAA500827910 /* Rain.sks in Resources */,
-				ACC2785429B0AA3A00827910 /* PrologueEng.mov in Resources */,
-				ACC2785329B0AA3A00827910 /* PrologueIta.mov in Resources */,
+				ACC2788529B12E6200827910 /* IntroVideoIta.mov in Resources */,
 				88633C6129AF8DE80095FFED /* Assets.xcassets in Resources */,
 				ACC2785F29B0AAA500827910 /* SmokeParticle.sks in Resources */,
 				88633C5129AF8BC20095FFED /* Assets.xcassets in Resources */,
@@ -303,9 +303,9 @@
 				88633C4F29AF8BC00095FFED /* ContentView.swift in Sources */,
 				ACC2786629B0AB1300827910 /* ParameterConstants.swift in Sources */,
 				88633C6629AF8FBC0095FFED /* GamePad.swift in Sources */,
-				ACC2787129B0ABE400827910 /* VideoManager.swift in Sources */,
 				88633C6E29AFA4850095FFED /* EntityManager.swift in Sources */,
 				88633C6C29AF9F8F0095FFED /* SceneManager.swift in Sources */,
+				ACC2787629B11CAD00827910 /* IntroVideoView.swift in Sources */,
 				ACC2787429B0B53B00827910 /* MenuView.swift in Sources */,
 				88633C7229AFA51A0095FFED /* Player.swift in Sources */,
 				88633C5C29AF8C840095FFED /* Game.swift in Sources */,
