@@ -18,7 +18,6 @@ class EntityManager {
         // check for player and add the entities
         if let player = scene.childNode(withName: "player") {
             add(name: player.name!, entity: Player(node: player))
-            
         }
         
         // check for platforms and add to the entities
@@ -31,7 +30,6 @@ class EntityManager {
                 index = -1
             }
         }
-        print(entities)
     }
     
     func add(name: String, entity: GKEntity) {

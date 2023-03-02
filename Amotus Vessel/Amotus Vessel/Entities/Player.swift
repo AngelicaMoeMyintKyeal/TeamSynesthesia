@@ -42,9 +42,8 @@ class Player: GKEntity, InputDelegate {
     }
     
     func jump() {
-        print("Player jumping")
         if let spriteComponent = self.component(ofType: Sprite.self) {
-            spriteComponent.node.run(SKAction.moveTo(y: 100, duration: 3.0))
+            spriteComponent.node.run(SKAction.moveTo(y: 50, duration: 1.0))
         }
     }
 }

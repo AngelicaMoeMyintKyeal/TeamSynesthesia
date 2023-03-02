@@ -17,12 +17,9 @@ class Game {
             self.manager = manager
             if let player = self.manager.entityManager.entities["player"] as? Player {
                 gamePad.delegate = player
-                print("Downcasting of Player done")
             } else {
-                print("Downcasting of Player failed")
+                fatalError("Downcasting of Player failed")
             }
-            print(self.manager.test)
-//            print(self.manager.entityManager)
         } else {
             fatalError("Downcasting of the .sks custom class failed")
         }

@@ -67,8 +67,6 @@ class GamePad {
             if pressed {
                 print("jump")
                 self.delegate?.jump()
-//                SKAction.moveTo(y: -100, duration: 3.0)
-//                strongController.controllerJump(pressed)
             }
         }
         
