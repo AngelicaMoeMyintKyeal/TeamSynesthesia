@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88633C4D29AF8BC00095FFED /* Amotus_VesselApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C4C29AF8BC00095FFED /* Amotus_VesselApp.swift */; };
+		88633C4F29AF8BC00095FFED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C4E29AF8BC00095FFED /* ContentView.swift */; };
+		88633C5129AF8BC20095FFED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88633C5029AF8BC20095FFED /* Assets.xcassets */; };
+		88633C5429AF8BC20095FFED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88633C5329AF8BC20095FFED /* Preview Assets.xcassets */; };
+		88633C5C29AF8C840095FFED /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C5B29AF8C840095FFED /* Game.swift */; };
+		88633C6129AF8DE80095FFED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88633C6029AF8DE80095FFED /* Assets.xcassets */; };
+		88633C6629AF8FBC0095FFED /* GamePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C6529AF8FBC0095FFED /* GamePad.swift */; };
+		88633C6A29AF93730095FFED /* FinalBossLevel.sks in Resources */ = {isa = PBXBuildFile; fileRef = 88633C6929AF93730095FFED /* FinalBossLevel.sks */; };
+		88633C6C29AF9F8F0095FFED /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C6B29AF9F8F0095FFED /* SceneManager.swift */; };
+		88633C6E29AFA4850095FFED /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C6D29AFA4850095FFED /* EntityManager.swift */; };
+		88633C7229AFA51A0095FFED /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7129AFA51A0095FFED /* Player.swift */; };
+		88633C7429AFA5440095FFED /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7329AFA5440095FFED /* Sprite.swift */; };
+		88633C7629AFA5A30095FFED /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7529AFA5A30095FFED /* Physics.swift */; };
+		88633C7829AFA7EC0095FFED /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7729AFA7EC0095FFED /* Platform.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		88633C4929AF8BC00095FFED /* Amotus Vessel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amotus Vessel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88633C4C29AF8BC00095FFED /* Amotus_VesselApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amotus_VesselApp.swift; sourceTree = "<group>"; };
+		88633C4E29AF8BC00095FFED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		88633C5029AF8BC20095FFED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88633C5329AF8BC20095FFED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88633C5529AF8BC20095FFED /* Amotus_Vessel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Amotus_Vessel.entitlements; sourceTree = "<group>"; };
+		88633C5B29AF8C840095FFED /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		88633C6029AF8DE80095FFED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88633C6529AF8FBC0095FFED /* GamePad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePad.swift; sourceTree = "<group>"; };
+		88633C6929AF93730095FFED /* FinalBossLevel.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FinalBossLevel.sks; sourceTree = "<group>"; };
+		88633C6B29AF9F8F0095FFED /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		88633C6D29AFA4850095FFED /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		88633C7129AFA51A0095FFED /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		88633C7329AFA5440095FFED /* Sprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
+		88633C7529AFA5A30095FFED /* Physics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
+		88633C7729AFA7EC0095FFED /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88633C4629AF8BC00095FFED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88633C4029AF8BC00095FFED = {
+			isa = PBXGroup;
+			children = (
+				88633C4B29AF8BC00095FFED /* Amotus Vessel */,
+				88633C4A29AF8BC00095FFED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88633C4A29AF8BC00095FFED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88633C4929AF8BC00095FFED /* Amotus Vessel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88633C4B29AF8BC00095FFED /* Amotus Vessel */ = {
+			isa = PBXGroup;
+			children = (
+				88633C4C29AF8BC00095FFED /* Amotus_VesselApp.swift */,
+				88633C4E29AF8BC00095FFED /* ContentView.swift */,
+				88633C7929B08F470095FFED /* Models */,
+				88633C6F29AFA4F00095FFED /* Entities */,
+				88633C7029AFA4F70095FFED /* Components */,
+				88633C5D29AF8CA90095FFED /* SpriteKit */,
+				88633C5029AF8BC20095FFED /* Assets.xcassets */,
+				88633C5529AF8BC20095FFED /* Amotus_Vessel.entitlements */,
+				88633C5229AF8BC20095FFED /* Preview Content */,
+			);
+			path = "Amotus Vessel";
+			sourceTree = "<group>";
+		};
+		88633C5229AF8BC20095FFED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				88633C5329AF8BC20095FFED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88633C5D29AF8CA90095FFED /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				88633C6929AF93730095FFED /* FinalBossLevel.sks */,
+				88633C6029AF8DE80095FFED /* Assets.xcassets */,
+			);
+			path = SpriteKit;
+			sourceTree = "<group>";
+		};
+		88633C6F29AFA4F00095FFED /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				88633C7129AFA51A0095FFED /* Player.swift */,
+				88633C7729AFA7EC0095FFED /* Platform.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		88633C7029AFA4F70095FFED /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				88633C7329AFA5440095FFED /* Sprite.swift */,
+				88633C7529AFA5A30095FFED /* Physics.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		88633C7929B08F470095FFED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				88633C5B29AF8C840095FFED /* Game.swift */,
+				88633C6529AF8FBC0095FFED /* GamePad.swift */,
+				88633C6B29AF9F8F0095FFED /* SceneManager.swift */,
+				88633C6D29AFA4850095FFED /* EntityManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88633C4829AF8BC00095FFED /* Amotus Vessel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88633C5829AF8BC20095FFED /* Build configuration list for PBXNativeTarget "Amotus Vessel" */;
+			buildPhases = (
+				88633C4529AF8BC00095FFED /* Sources */,
+				88633C4629AF8BC00095FFED /* Frameworks */,
+				88633C4729AF8BC00095FFED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Amotus Vessel";
+			productName = "Amotus Vessel";
+			productReference = 88633C4929AF8BC00095FFED /* Amotus Vessel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88633C4129AF8BC00095FFED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					88633C4829AF8BC00095FFED = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 88633C4429AF8BC00095FFED /* Build configuration list for PBXProject "Amotus Vessel" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88633C4029AF8BC00095FFED;
+			productRefGroup = 88633C4A29AF8BC00095FFED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88633C4829AF8BC00095FFED /* Amotus Vessel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88633C4729AF8BC00095FFED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88633C6A29AF93730095FFED /* FinalBossLevel.sks in Resources */,
+				88633C5429AF8BC20095FFED /* Preview Assets.xcassets in Resources */,
+				88633C6129AF8DE80095FFED /* Assets.xcassets in Resources */,
+				88633C5129AF8BC20095FFED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88633C4529AF8BC00095FFED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88633C7829AFA7EC0095FFED /* Platform.swift in Sources */,
+				88633C4F29AF8BC00095FFED /* ContentView.swift in Sources */,
+				88633C6629AF8FBC0095FFED /* GamePad.swift in Sources */,
+				88633C6E29AFA4850095FFED /* EntityManager.swift in Sources */,
+				88633C6C29AF9F8F0095FFED /* SceneManager.swift in Sources */,
+				88633C7229AFA51A0095FFED /* Player.swift in Sources */,
+				88633C5C29AF8C840095FFED /* Game.swift in Sources */,
+				88633C7429AFA5440095FFED /* Sprite.swift in Sources */,
+				88633C4D29AF8BC00095FFED /* Amotus_VesselApp.swift in Sources */,
+				88633C7629AFA5A30095FFED /* Physics.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		88633C5629AF8BC20095FFED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88633C5729AF8BC20095FFED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		88633C5929AF8BC20095FFED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Amotus Vessel/Amotus_Vessel.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Amotus Vessel/Preview Content\"";
+				DEVELOPMENT_TEAM = 4Y299ULQLV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Synesthesia.Amotus-Vessel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		88633C5A29AF8BC20095FFED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Amotus Vessel/Amotus_Vessel.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Amotus Vessel/Preview Content\"";
+				DEVELOPMENT_TEAM = 4Y299ULQLV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Synesthesia.Amotus-Vessel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88633C4429AF8BC00095FFED /* Build configuration list for PBXProject "Amotus Vessel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88633C5629AF8BC20095FFED /* Debug */,
+				88633C5729AF8BC20095FFED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88633C5829AF8BC20095FFED /* Build configuration list for PBXNativeTarget "Amotus Vessel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88633C5929AF8BC20095FFED /* Debug */,
+				88633C5A29AF8BC20095FFED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88633C4129AF8BC00095FFED /* Project object */;
+}
