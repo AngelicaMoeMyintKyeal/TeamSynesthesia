@@ -15,7 +15,7 @@ struct IntroVideoView: View {
     
     var body: some View {
         
-            VStack {
+            ZStack {
 //                AVPlayerControllerRepresented(videoPlayer: videoPlayer)
                 
                 switch deviceLang {
@@ -27,6 +27,8 @@ struct IntroVideoView: View {
                 default:
                     AVPlayerControllerRepresented(videoPlayer: videoPlayerManager.videoPlayerEng)
                 }
+                
+                SkipButtonView()
             }
             .onAppear() {
                 switch deviceLang {
@@ -63,3 +65,37 @@ struct AVPlayerControllerRepresented : NSViewRepresentable {
 //        IntroVideoView()
 //    }
 //}
+
+struct SkipButtonView: View {
+    
+    var body: some View {
+    
+        GeometryReader { geometry in
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button(
+                        action: {
+                            // write action
+                            print("Skip Button is Clicked")
+                        },
+                        label: {
+                            VStack(alignment: .center) {
+                                Image("SkipButton")
+//                                    .resizable()
+//                                    .padding()
+                                    .aspectRatio(contentMode: .fit)
+                                .frame(maxWidth: geometry.size.width / 10)
+                            }
+                        }
+                    )
+                    .frame(height: 44)
+                    .padding(.horizontal, 20)
+                    .cornerRadius(8)
+                    Spacer()
+                }
+            }
+        }
+    }
+}
