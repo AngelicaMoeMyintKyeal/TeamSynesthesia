@@ -21,6 +21,8 @@
 		88633C7429AFA5440095FFED /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7329AFA5440095FFED /* Sprite.swift */; };
 		88633C7629AFA5A30095FFED /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7529AFA5A30095FFED /* Physics.swift */; };
 		88633C7829AFA7EC0095FFED /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7729AFA7EC0095FFED /* Platform.swift */; };
+		AC6CC34E29B2182600BC9047 /* IMMORTAL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC4EA25B29B216D200D22BF6 /* IMMORTAL.ttf */; };
+		AC6CC34F29B2182900BC9047 /* SigismundoDiFanti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC4EA25C29B216D200D22BF6 /* SigismundoDiFanti.ttf */; };
 		ACC2785D29B0AAA500827910 /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = ACC2785629B0AAA500827910 /* Rain.sks */; };
 		ACC2785E29B0AAA500827910 /* FlameParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = ACC2785729B0AAA500827910 /* FlameParticle.sks */; };
 		ACC2785F29B0AAA500827910 /* SmokeParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = ACC2785829B0AAA500827910 /* SmokeParticle.sks */; };
@@ -40,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FAAFC4029B1FE06002CD5DE /* Amotus-Vessel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Amotus-Vessel-Info.plist"; sourceTree = SOURCE_ROOT; };
 		88633C4929AF8BC00095FFED /* Amotus Vessel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amotus Vessel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88633C4C29AF8BC00095FFED /* Amotus_VesselApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amotus_VesselApp.swift; sourceTree = "<group>"; };
 		88633C4E29AF8BC00095FFED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,7 +59,8 @@
 		88633C7329AFA5440095FFED /* Sprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
 		88633C7529AFA5A30095FFED /* Physics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
 		88633C7729AFA7EC0095FFED /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
-		887D077229B0DF7D00BBD0D5 /* Amotus-Vessel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Amotus-Vessel-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AC4EA25B29B216D200D22BF6 /* IMMORTAL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMMORTAL.ttf; sourceTree = "<group>"; };
+		AC4EA25C29B216D200D22BF6 /* SigismundoDiFanti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SigismundoDiFanti.ttf; sourceTree = "<group>"; };
 		ACC2785629B0AAA500827910 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
 		ACC2785729B0AAA500827910 /* FlameParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FlameParticle.sks; sourceTree = "<group>"; };
 		ACC2785829B0AAA500827910 /* SmokeParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SmokeParticle.sks; sourceTree = "<group>"; };
@@ -88,6 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FAAFC3C29B1FD77002CD5DE /* font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		4FAAFC3D29B1FDAD002CD5DE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AC4EA25B29B216D200D22BF6 /* IMMORTAL.ttf */,
+				AC4EA25C29B216D200D22BF6 /* SigismundoDiFanti.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		88633C4029AF8BC00095FFED = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +127,8 @@
 		88633C4B29AF8BC00095FFED /* Amotus Vessel */ = {
 			isa = PBXGroup;
 			children = (
-				887D077229B0DF7D00BBD0D5 /* Amotus-Vessel-Info.plist */,
+				4FAAFC4029B1FE06002CD5DE /* Amotus-Vessel-Info.plist */,
+				4FAAFC3D29B1FDAD002CD5DE /* Fonts */,
 				ACD84FA429B1F1BB00F01D00 /* IntroVideoEng.mp4 */,
 				ACD84FA329B1F1BB00F01D00 /* IntroVideoIta.mp4 */,
 				88633C4C29AF8BC00095FFED /* Amotus_VesselApp.swift */,
@@ -130,6 +151,7 @@
 		88633C5229AF8BC20095FFED /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				4FAAFC3C29B1FD77002CD5DE /* font */,
 				88633C5329AF8BC20095FFED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -285,6 +307,7 @@
 			files = (
 				ACC2786329B0AAA500827910 /* OnboardingParticle.sks in Resources */,
 				88633C6A29AF93730095FFED /* FinalBossLevel.sks in Resources */,
+				AC6CC34F29B2182900BC9047 /* SigismundoDiFanti.ttf in Resources */,
 				ACD84FA529B1F1BB00F01D00 /* IntroVideoIta.mp4 in Resources */,
 				ACD84FA629B1F1BB00F01D00 /* IntroVideoEng.mp4 in Resources */,
 				ACC2785E29B0AAA500827910 /* FlameParticle.sks in Resources */,
@@ -295,6 +318,7 @@
 				ACC2785F29B0AAA500827910 /* SmokeParticle.sks in Resources */,
 				88633C5129AF8BC20095FFED /* Assets.xcassets in Resources */,
 				ACC2786229B0AAA500827910 /* Bokeh.sks in Resources */,
+				AC6CC34E29B2182600BC9047 /* IMMORTAL.ttf in Resources */,
 				ACC2786129B0AAA500827910 /* FearParticle.sks in Resources */,
 				ACC2786029B0AAA500827910 /* Fireflies.sks in Resources */,
 			);
@@ -466,12 +490,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Amotus Vessel/Preview Content\"";
-				DEVELOPMENT_TEAM = 6PXK8C9VFM;
+				DEVELOPMENT_TEAM = 4Y299ULQLV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Amotus-Vessel-Info.plist";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,12 +519,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Amotus Vessel/Preview Content\"";
-				DEVELOPMENT_TEAM = 6PXK8C9VFM;
+				DEVELOPMENT_TEAM = 4Y299ULQLV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Amotus-Vessel-Info.plist";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

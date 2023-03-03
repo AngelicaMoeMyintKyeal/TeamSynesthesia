@@ -12,6 +12,7 @@ struct IntroVideoView: View {
        
     var deviceLang: String
     @StateObject var videoPlayerManager = VideoPlayerManager()
+   
     
     var body: some View {
         
@@ -68,6 +69,10 @@ struct AVPlayerControllerRepresented : NSViewRepresentable {
 
 struct SkipButtonView: View {
     
+    let skipButton: LocalizedStringKey = "Skip"
+    
+    @State private var isHoveringSkip = false
+    
     var body: some View {
     
         GeometryReader { geometry in
@@ -75,25 +80,33 @@ struct SkipButtonView: View {
                 Spacer()
                 HStack {
                     Spacer()
+                    Spacer()
+                    Spacer()
                     Button(
                         action: {
                             // write action
                             print("Skip Button is Clicked")
                         },
                         label: {
-                            VStack(alignment: .center) {
-                                Image("SkipButton")
-//                                    .resizable()
-//                                    .padding()
-                                    .aspectRatio(contentMode: .fit)
-                                .frame(maxWidth: geometry.size.width / 10)
+                            Text(skipButton)
+                            .font(.custom("SigismundoDiFanti", size: 30))
+                            .foregroundColor(isHoveringSkip ? Color("MenuBlue") : Color.white)
+                        
+                            
+                            }
+                        
+                    )
+                    
+            
+                    .cornerRadius(8)
+                    .buttonStyle(BorderlessButtonStyle())
+                        .padding(.horizontal, 20)
+                        .onHover { hovering in
+                            withAnimation(.easeInOut(duration: 0.2)) {
+                                isHoveringSkip = hovering
                             }
                         }
-                    )
-                    .frame(height: 44)
-                    .padding(.horizontal, 20)
-                    .cornerRadius(8)
-                    Spacer()
+                
                 }
             }
         }
