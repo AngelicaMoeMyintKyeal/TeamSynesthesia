@@ -35,6 +35,8 @@
 		ACC2787629B11CAD00827910 /* IntroVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2787529B11CAD00827910 /* IntroVideoView.swift */; };
 		ACD84FA029B148D000F01D00 /* VideoPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD84F9F29B148D000F01D00 /* VideoPlayerManager.swift */; };
 		ACD84FA229B1E42700F01D00 /* OnboardingParticleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD84FA129B1E42700F01D00 /* OnboardingParticleScene.swift */; };
+		ACD84FA529B1F1BB00F01D00 /* IntroVideoIta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ACD84FA329B1F1BB00F01D00 /* IntroVideoIta.mp4 */; };
+		ACD84FA629B1F1BB00F01D00 /* IntroVideoEng.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ACD84FA429B1F1BB00F01D00 /* IntroVideoEng.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		ACC2787529B11CAD00827910 /* IntroVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVideoView.swift; sourceTree = "<group>"; };
 		ACD84F9F29B148D000F01D00 /* VideoPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerManager.swift; sourceTree = "<group>"; };
 		ACD84FA129B1E42700F01D00 /* OnboardingParticleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingParticleScene.swift; sourceTree = "<group>"; };
+		ACD84FA329B1F1BB00F01D00 /* IntroVideoIta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideoIta.mp4; sourceTree = "<group>"; };
+		ACD84FA429B1F1BB00F01D00 /* IntroVideoEng.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideoEng.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				887D077229B0DF7D00BBD0D5 /* Amotus-Vessel-Info.plist */,
+				ACD84FA429B1F1BB00F01D00 /* IntroVideoEng.mp4 */,
+				ACD84FA329B1F1BB00F01D00 /* IntroVideoIta.mp4 */,
 				88633C4C29AF8BC00095FFED /* Amotus_VesselApp.swift */,
 				88633C4E29AF8BC00095FFED /* ContentView.swift */,
 				ACC2787229B0B21500827910 /* View */,
@@ -279,6 +285,8 @@
 			files = (
 				ACC2786329B0AAA500827910 /* OnboardingParticle.sks in Resources */,
 				88633C6A29AF93730095FFED /* FinalBossLevel.sks in Resources */,
+				ACD84FA529B1F1BB00F01D00 /* IntroVideoIta.mp4 in Resources */,
+				ACD84FA629B1F1BB00F01D00 /* IntroVideoEng.mp4 in Resources */,
 				ACC2785E29B0AAA500827910 /* FlameParticle.sks in Resources */,
 				ACC2786F29B0AB9300827910 /* Localizable.strings in Resources */,
 				88633C5429AF8BC20095FFED /* Preview Assets.xcassets in Resources */,
