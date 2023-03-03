@@ -8,7 +8,6 @@
 import SpriteKit
 
 class SceneManager: SKScene, SKPhysicsContactDelegate {
-    let test = "downcast succesful"
     var entityManager: EntityManager!
     
     required init?(coder aDecoder: NSCoder) {

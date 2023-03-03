@@ -26,6 +26,8 @@ class Physics: GKComponent {
         physics.categoryBitMask = category.rawValue
         physics.contactTestBitMask = contact.rawValue
         physics.collisionBitMask = collision.rawValue
+        // lower the restituition of the platforms?
+        // set isDynamic of the player to false?
         node.physicsBody = physics
         super.init()
     }
