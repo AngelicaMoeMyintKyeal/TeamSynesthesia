@@ -11,5 +11,10 @@
 	</array>
 	<key>GCSupportsControllerUserInteraction</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>IMMORTAL.ttf</string>
+		<string>SigismundoDiFanti.ttf</string>
+	</array>
 </dict>
 </plist>
