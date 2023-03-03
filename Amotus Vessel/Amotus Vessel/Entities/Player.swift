@@ -62,7 +62,7 @@ class Player: GKEntity, InputDelegate {
     func move(direction: direction) {
         isMoving = true
         guard let spriteComponent = self.component(ofType: Sprite.self) else { return }
-        var movement: CGFloat = 50
+        var movement: CGFloat = 30
         if direction == .left { movement *= -1 }
         spriteComponent.node.run(SKAction.moveBy(x: movement, y: 0, duration: 0.1)) {
             self.isMoving = false
