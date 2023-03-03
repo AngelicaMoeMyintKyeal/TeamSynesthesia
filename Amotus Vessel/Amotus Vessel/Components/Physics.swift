@@ -19,15 +19,13 @@ class Physics: GKComponent {
     init(node: SKSpriteNode, category: bitMasks, contact: bitMasks, collision: bitMasks) {
         if let texture = node.texture {
             physics = SKPhysicsBody(texture: texture, size: node.size)
-            print(node.size)
+//            print(node.size)
         } else {
             physics = SKPhysicsBody()
         }
         physics.categoryBitMask = category.rawValue
         physics.contactTestBitMask = contact.rawValue
         physics.collisionBitMask = collision.rawValue
-        // lower the restituition of the platforms?
-        // set isDynamic of the player to false?
         node.physicsBody = physics
         super.init()
     }
