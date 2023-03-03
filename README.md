@@ -19,7 +19,7 @@
 
 ## About The Project
 
- We will be creating a game that entertains users by letting them play with emotions.
+ We will be creating a game that entertains users by letting them play in an emotions based game scene.
 
 ## Game Name
 `
@@ -66,7 +66,7 @@ Write description of the game.
   
 - Main Game Characters Design Artists
   - [Salvatore Amato](https://github.com/Salvatore-Amato)
-  - [Anja Hysa]()
+  - [Anja Hysa](https://github.com/oceanjah)
   - [Lara De Sena](https://github.com/kumoriheart)
   - [Giovanni Mandato](https://github.com/GiovanniMandato)
 
@@ -76,4 +76,4 @@ Write description of the game.
 
 ## Project Status
 
-- In Progress
+- In Development
