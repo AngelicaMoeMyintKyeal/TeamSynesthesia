@@ -36,6 +36,7 @@
 		ACC2788529B12E6200827910 /* IntroVideoIta.mov in Resources */ = {isa = PBXBuildFile; fileRef = ACC2788329B12E6200827910 /* IntroVideoIta.mov */; };
 		ACC2788629B12E6200827910 /* IntroVideoEng.mov in Resources */ = {isa = PBXBuildFile; fileRef = ACC2788429B12E6200827910 /* IntroVideoEng.mov */; };
 		ACD84FA029B148D000F01D00 /* VideoPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD84F9F29B148D000F01D00 /* VideoPlayerManager.swift */; };
+		ACD84FA229B1E42700F01D00 /* OnboardingParticleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD84FA129B1E42700F01D00 /* OnboardingParticleScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		ACC2788329B12E6200827910 /* IntroVideoIta.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = IntroVideoIta.mov; path = ../../../../../IntroVideoIta.mov; sourceTree = "<group>"; };
 		ACC2788429B12E6200827910 /* IntroVideoEng.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = IntroVideoEng.mov; path = ../../../../../IntroVideoEng.mov; sourceTree = "<group>"; };
 		ACD84F9F29B148D000F01D00 /* VideoPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerManager.swift; sourceTree = "<group>"; };
+		ACD84FA129B1E42700F01D00 /* OnboardingParticleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingParticleScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				88633C6B29AF9F8F0095FFED /* SceneManager.swift */,
 				88633C6D29AFA4850095FFED /* EntityManager.swift */,
 				ACD84F9F29B148D000F01D00 /* VideoPlayerManager.swift */,
+				ACD84FA129B1E42700F01D00 /* OnboardingParticleScene.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				88633C7429AFA5440095FFED /* Sprite.swift in Sources */,
 				ACC2786929B0AB1C00827910 /* LocalizationSystem.swift in Sources */,
 				88633C4D29AF8BC00095FFED /* Amotus_VesselApp.swift in Sources */,
+				ACD84FA229B1E42700F01D00 /* OnboardingParticleScene.swift in Sources */,
 				ACD84FA029B148D000F01D00 /* VideoPlayerManager.swift in Sources */,
 				88633C7629AFA5A30095FFED /* Physics.swift in Sources */,
 			);
