@@ -9,6 +9,8 @@ import SpriteKit
 import GameplayKit
 
 class Player: GKEntity, InputDelegate {
+    var isAttacking = false
+    var isMoving = false
     var isJumping = false
     
     /// Create a Player from a String corresponding to the file name of the texture
@@ -50,5 +52,17 @@ class Player: GKEntity, InputDelegate {
                 self.isJumping = false
             }
         }
+    }
+    
+    func attack() {
+        isAttacking = true
+        // TODO: Add attack code block
+        isAttacking = false
+    }
+    
+    func move(direction: direction) {
+        isMoving = true
+        // TODO: Add movement code block
+        isMoving = false
     }
 }
