@@ -47,10 +47,9 @@ class Player: GKEntity, InputDelegate {
     
     func jump() {
         isJumping = true
-        if let spriteComponent = self.component(ofType: Sprite.self) {
-            spriteComponent.node.run(SKAction.moveTo(y: 70, duration: 1.0)) {
-                self.isJumping = false
-            }
+        guard let spriteComponent = self.component(ofType: Sprite.self) else { return }
+        spriteComponent.node.run(SKAction.moveBy(x: 0, y: 150, duration: 0.1)) {
+            self.isJumping = false
         }
     }
     
@@ -62,7 +61,11 @@ class Player: GKEntity, InputDelegate {
     
     func move(direction: direction) {
         isMoving = true
-        // TODO: Add movement code block
-        isMoving = false
+        guard let spriteComponent = self.component(ofType: Sprite.self) else { return }
+        var movement: CGFloat = 50
+        if direction == .left { movement *= -1 }
+        spriteComponent.node.run(SKAction.moveBy(x: movement, y: 0, duration: 0.1)) {
+            self.isMoving = false
+        }
     }
 }
