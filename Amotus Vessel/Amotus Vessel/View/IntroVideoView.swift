@@ -68,6 +68,9 @@ struct AVPlayerControllerRepresented : NSViewRepresentable {
 //}
 
 struct SkipButtonView: View {
+    
+    let skipButton: LocalizedStringKey = "Skip"
+    
     @State private var isHoveringSkip = false
     
     var body: some View {
@@ -85,7 +88,7 @@ struct SkipButtonView: View {
                             print("Skip Button is Clicked")
                         },
                         label: {
-                            Text("Skip")
+                            Text(skipButton)
                             .font(.custom("SigismundoDiFanti", size: 30))
                             .foregroundColor(isHoveringSkip ? Color("MenuBlue") : Color.white)
                         

@@ -12,6 +12,9 @@ import AppKit
 
 
 struct MenuView: View {
+    
+    let newGame: LocalizedStringKey = "New Game"
+    let quitGame: LocalizedStringKey = "Quit"
    
     @State private var isHoveringNewGame = false
     @State private var isHoveringQuit = false
@@ -50,7 +53,7 @@ struct MenuView: View {
                             print("Play Button is Clicked")
                         },
                         label: {
-                                Text("New Game")
+                                Text(newGame)
                                 .font(.custom("SigismundoDiFanti", size: 30))
                                 .foregroundColor(isHoveringNewGame ? Color("MenuBlue") : Color.white)
                             
@@ -73,7 +76,7 @@ struct MenuView: View {
                             print("Quit Button is Clicked")
                         },
                         label: {
-                                Text("Quit")
+                                Text(quitGame)
                                 .font(.custom("SigismundoDiFanti", size: 30))
                                 .foregroundColor(isHoveringQuit ? Color("MenuBlue") : Color.white)
                             
