@@ -23,7 +23,7 @@ struct ContentView: View {
             scene: scene,
             debugOptions: [.showsFPS, .showsPhysics, .showsNodeCount]
         )
-        .frame(minWidth: 1200, minHeight: 600)
+        .frame(minWidth: 756, minHeight: 472.5)
     }
 }
 

@@ -15,19 +15,17 @@ class EntityManager {
     init(scene: SKScene) {
         self.scene = scene
         
-        // check for player and add the entities
+        // get the player
         if let player = scene.childNode(withName: "player") {
             add(name: player.name!, entity: Player(node: player))
         }
         
-        // check for platforms and add to the entities
-        var index = 0
-        while index >= 0 {
-            if let platform = scene.childNode(withName: "platform\(index)") {
+        // get the platforms
+        for nodeIndex in 0... {
+            if let platform = scene.childNode(withName: "platform\(nodeIndex)") {
                 add(name: platform.name!, entity: Platform(node: platform))
-                index += 1
             } else {
-                index = -1
+                break
             }
         }
     }

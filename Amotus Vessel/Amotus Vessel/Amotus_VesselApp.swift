@@ -11,10 +11,10 @@ import SwiftUI
 struct GamemotionApp: App {
     var body: some Scene {
         WindowGroup {
-          //  ContentView()
+            ContentView()
             
             //MARK: Start of the Application
-           IntroVideoView(deviceLang: Locale.current.languageCode ?? ParameterConstants.englishLanguage)
+//           IntroVideoView(deviceLang: Locale.current.languageCode ?? ParameterConstants.englishLanguage)
         }
     }
 }
