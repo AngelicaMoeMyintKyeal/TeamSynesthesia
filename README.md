@@ -1,3 +1,15 @@
+<p align="center">
+<img width="120" alt="AmotusVesselLogo" src="https://user-images.githubusercontent.com/74500135/223088659-77f123cc-167d-42bf-a511-b7ba9f0a0c65.png">
+<h1 align="center">Synesthesia Team's Repository </h1>
+<div style="text" align="center">
+
+![Version](https://img.shields.io/static/v1?label=Version&message=1.0&color=brightgreen)
+[![Swift Version](https://img.shields.io/static/v1?label=Swift%20Version&message=5&color=brightgreen&logo=swift)](https://www.swift.org/getting-started/)
+![Frameworks](https://img.shields.io/static/v1?label=Frameworks&message=SwiftUI%20|%20SpriteKit%20|%20GamePlayKit%20|%20GameController%20|%20AVKit&color=brightgreen&logo=swift)
+
+</div>
+</p>
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -19,7 +31,7 @@
 
 ## About The Project
 
- We will be creating a game that entertains users by letting them play with emotions.
+ We will be creating a game that entertains users by letting them play in an emotions based game scene.
 
 ## Game Name
 `
@@ -66,7 +78,7 @@ Write description of the game.
   
 - Main Game Characters Design Artists
   - [Salvatore Amato](https://github.com/Salvatore-Amato)
-  - [Anja Hysa]()
+  - [Anja Hysa](https://github.com/oceanjah)
   - [Lara De Sena](https://github.com/kumoriheart)
   - [Giovanni Mandato](https://github.com/GiovanniMandato)
 
@@ -76,4 +88,4 @@ Write description of the game.
 
 ## Project Status
 
-- In Progress
+- In Development
