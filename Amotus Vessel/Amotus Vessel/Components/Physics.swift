@@ -17,11 +17,23 @@ class Physics: GKComponent {
     }
 
     init(node: SKSpriteNode, category: bitMasks, contact: bitMasks, collision: bitMasks) {
-        if let texture = node.texture {
-            physics = SKPhysicsBody(texture: texture, size: node.size)
-//            print(node.size)
-        } else {
-            physics = SKPhysicsBody()
+        switch node.name {
+        case "player":
+            physics = SKPhysicsBody(rectangleOf: CGSize(width: 60, height: 160))
+        case "platform0",
+            "platform1",
+            "platform2",
+            "platform3",
+            "platform4",
+            "platform5":
+            physics = SKPhysicsBody(rectangleOf: CGSize(width: 140, height: 65))
+        default:
+            if let texture = node.texture {
+                physics = SKPhysicsBody(texture: texture, size: node.size)
+                //            print(node.size)
+            } else {
+                physics = SKPhysicsBody()
+            }
         }
         physics.categoryBitMask = category.rawValue
         physics.contactTestBitMask = contact.rawValue

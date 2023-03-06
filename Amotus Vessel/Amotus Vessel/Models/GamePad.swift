@@ -26,9 +26,7 @@ class GamePad {
     
     @objc
     func handleControllerDidConnect(_ notification: Notification) {
-        guard let gameController = notification.object as? GCController else {
-            return
-        }
+        guard let gameController = notification.object as? GCController else { return }
         print("controller connected")
         registerGameController(gameController)
     }
@@ -39,49 +37,42 @@ class GamePad {
     }
     
     func registerGameController(_ gameController: GCController) {
-        var dPadUp: GCControllerButtonInput?
-        var dPadLeft: GCControllerButtonInput?
-        var dPadRight: GCControllerButtonInput?
-        var buttonA: GCControllerButtonInput?
-        var buttonB: GCControllerButtonInput?
-//        var buttonX: GCControllerButtonInput?
-        
         guard let gamepad = gameController.extendedGamepad else {
             print("Error: the gamepad connected is not an extendedGamepad")
             return
         }
         
-        dPadUp = gamepad.dpad.up
-        dPadLeft = gamepad.dpad.left
-        dPadRight = gamepad.dpad.right
-        buttonA = gamepad.buttonA // Cross on Playstation
-        buttonB = gamepad.buttonB // Circle on Playstation
-//        buttonX = gamepad.buttonX // Square on Playstation
+        let dPadUp = gamepad.dpad.up
+        let dPadLeft = gamepad.dpad.left
+        let dPadRight = gamepad.dpad.right
+        let buttonA = gamepad.buttonA // Cross on Playstation
+        let buttonB = gamepad.buttonB // Circle on Playstation
+//        let buttonX = gamepad.buttonX // Square on Playstation
         
-        dPadUp?.pressedChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
+        dPadUp.pressedChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
             if pressed && self.delegate?.isJumping == false {
                 print("jump")
                 self.delegate?.jump()
             }
         }
         
-        dPadLeft?.pressedChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
+        dPadLeft.pressedChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
             if pressed && self.delegate?.isMoving == false {
                 print("move left")
                 self.delegate?.move(direction: .left)
             }
         }
         
-        dPadRight?.pressedChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
+        dPadRight.pressedChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
             if pressed && self.delegate?.isMoving == false {
                 print("move right")
                 self.delegate?.move(direction: .right)
             }
         }
         
-        buttonA?.pressedChangedHandler = dPadUp?.pressedChangedHandler
+        buttonA.pressedChangedHandler = dPadUp.pressedChangedHandler
         
-        buttonB?.pressedChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
+        buttonB.pressedChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
             if pressed && self.delegate?.isAttacking == false {
                 print("attack")
                 self.delegate?.attack()

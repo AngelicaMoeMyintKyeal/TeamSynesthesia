@@ -41,10 +41,6 @@ class Player: GKEntity, InputDelegate {
         addComponent(physics)
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     func jump() {
         isJumping = true
         guard let spriteComponent = self.component(ofType: Sprite.self) else { return }
@@ -67,5 +63,9 @@ class Player: GKEntity, InputDelegate {
         spriteComponent.node.run(SKAction.moveBy(x: movement, y: 0, duration: 0.1)) {
             self.isMoving = false
         }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
