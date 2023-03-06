@@ -55,7 +55,7 @@ Write description of the game.
   - https
 
   ```sh
-  git clone git@github.com:AngelicaMoeMyintKyeal/TeamSynthesthesia.git
+  git clone https://github.com/AngelicaMoeMyintKyeal/TeamSynesthesia.git
   ```
 
   - ssh
