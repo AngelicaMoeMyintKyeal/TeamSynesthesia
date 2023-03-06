@@ -9,8 +9,6 @@ import SwiftUI
 import SpriteKit
 import AppKit
 
-
-
 struct MenuView: View {
     
     let newGame: LocalizedStringKey = "New Game"
@@ -56,9 +54,6 @@ struct MenuView: View {
                                 Text(newGame)
                                 .font(.custom("SigismundoDiFanti", size: 30))
                                 .foregroundColor(isHoveringNewGame ? Color("MenuBlue") : Color.white)
-                            
-                                
-                                
                         }
                         
                     ) .buttonStyle(BorderlessButtonStyle())
@@ -79,9 +74,6 @@ struct MenuView: View {
                                 Text(quitGame)
                                 .font(.custom("SigismundoDiFanti", size: 30))
                                 .foregroundColor(isHoveringQuit ? Color("MenuBlue") : Color.white)
-                            
-                                
-                                
                         }
                         
                     ) .buttonStyle(BorderlessButtonStyle())
