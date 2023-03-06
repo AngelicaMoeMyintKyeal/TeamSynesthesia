@@ -7,7 +7,6 @@
 
 import SwiftUI
 import SpriteKit
-import AppKit
 
 struct MenuView: View {
     
