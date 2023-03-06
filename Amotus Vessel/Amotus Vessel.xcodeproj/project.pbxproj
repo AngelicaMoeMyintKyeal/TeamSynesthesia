@@ -23,6 +23,7 @@
 		88633C7829AFA7EC0095FFED /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7729AFA7EC0095FFED /* Platform.swift */; };
 		AC6CC34E29B2182600BC9047 /* IMMORTAL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC4EA25B29B216D200D22BF6 /* IMMORTAL.ttf */; };
 		AC6CC34F29B2182900BC9047 /* SigismundoDiFanti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC4EA25C29B216D200D22BF6 /* SigismundoDiFanti.ttf */; };
+		AC6CC35129B5DCE400BC9047 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6CC35029B5DCE400BC9047 /* GameOverView.swift */; };
 		ACC2785D29B0AAA500827910 /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = ACC2785629B0AAA500827910 /* Rain.sks */; };
 		ACC2785E29B0AAA500827910 /* FlameParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = ACC2785729B0AAA500827910 /* FlameParticle.sks */; };
 		ACC2785F29B0AAA500827910 /* SmokeParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = ACC2785829B0AAA500827910 /* SmokeParticle.sks */; };
@@ -61,6 +62,7 @@
 		88633C7729AFA7EC0095FFED /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		AC4EA25B29B216D200D22BF6 /* IMMORTAL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMMORTAL.ttf; sourceTree = "<group>"; };
 		AC4EA25C29B216D200D22BF6 /* SigismundoDiFanti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SigismundoDiFanti.ttf; sourceTree = "<group>"; };
+		AC6CC35029B5DCE400BC9047 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		ACC2785629B0AAA500827910 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
 		ACC2785729B0AAA500827910 /* FlameParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FlameParticle.sks; sourceTree = "<group>"; };
 		ACC2785829B0AAA500827910 /* SmokeParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SmokeParticle.sks; sourceTree = "<group>"; };
@@ -128,11 +130,11 @@
 			isa = PBXGroup;
 			children = (
 				4FAAFC4029B1FE06002CD5DE /* Amotus-Vessel-Info.plist */,
-				4FAAFC3D29B1FDAD002CD5DE /* Fonts */,
 				ACD84FA429B1F1BB00F01D00 /* IntroVideoEng.mp4 */,
 				ACD84FA329B1F1BB00F01D00 /* IntroVideoIta.mp4 */,
 				88633C4C29AF8BC00095FFED /* Amotus_VesselApp.swift */,
 				88633C4E29AF8BC00095FFED /* ContentView.swift */,
+				4FAAFC3D29B1FDAD002CD5DE /* Fonts */,
 				ACC2787229B0B21500827910 /* View */,
 				88633C7929B08F470095FFED /* Models */,
 				88633C6F29AFA4F00095FFED /* Entities */,
@@ -241,6 +243,7 @@
 			children = (
 				ACC2787329B0B53B00827910 /* MenuView.swift */,
 				ACC2787529B11CAD00827910 /* IntroVideoView.swift */,
+				AC6CC35029B5DCE400BC9047 /* GameOverView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				ACC2786629B0AB1300827910 /* ParameterConstants.swift in Sources */,
 				88633C6629AF8FBC0095FFED /* GamePad.swift in Sources */,
 				88633C6E29AFA4850095FFED /* EntityManager.swift in Sources */,
+				AC6CC35129B5DCE400BC9047 /* GameOverView.swift in Sources */,
 				88633C6C29AF9F8F0095FFED /* SceneManager.swift in Sources */,
 				ACC2787629B11CAD00827910 /* IntroVideoView.swift in Sources */,
 				ACC2787429B0B53B00827910 /* MenuView.swift in Sources */,
@@ -490,7 +494,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Amotus Vessel/Preview Content\"";
-				DEVELOPMENT_TEAM = 6PXK8C9VFM;
+				DEVELOPMENT_TEAM = 4Y299ULQLV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -519,7 +523,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Amotus Vessel/Preview Content\"";
-				DEVELOPMENT_TEAM = 6PXK8C9VFM;
+				DEVELOPMENT_TEAM = 4Y299ULQLV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

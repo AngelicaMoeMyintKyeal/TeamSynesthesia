@@ -80,8 +80,7 @@ struct SkipButtonView: View {
                 Spacer()
                 HStack {
                     Spacer()
-                    Spacer()
-                    Spacer()
+                        .frame(height: 100)
                     Button(
                         action: {
                             // write action
@@ -90,14 +89,10 @@ struct SkipButtonView: View {
                         label: {
                             Text(skipButton)
                             .font(.custom("SigismundoDiFanti", size: 30))
-                            .foregroundColor(isHoveringSkip ? Color("MenuBlue") : Color.white)
-                        
-                            
+                            .foregroundColor(isHoveringSkip ? Color("MenuBlue") : Color.red)
                             }
                         
                     )
-                    
-            
                     .cornerRadius(8)
                     .buttonStyle(BorderlessButtonStyle())
                         .padding(.horizontal, 20)
