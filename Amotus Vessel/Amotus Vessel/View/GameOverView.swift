@@ -32,7 +32,7 @@ struct GameOverView: View {
                             },
                             label: {
                                     Text(tryAgain)
-                                    .font(.custom("SigismundoDiFanti", size: 30))
+                                    .font(.custom(ParameterConstants.sigismundoFont, size: 30))
                                     .foregroundColor(isHoveringTryAgain ? Color("MenuBlue") : Color.white)
                             }
                         ) .buttonStyle(BorderlessButtonStyle())
@@ -51,7 +51,7 @@ struct GameOverView: View {
                             },
                             label: {
                                     Text(mainMenu)
-                                    .font(.custom("SigismundoDiFanti", size: 30))
+                                    .font(.custom(ParameterConstants.sigismundoFont, size: 30))
                                     .foregroundColor(isHoveringMainMenu ? Color("MenuBlue") : Color.white)
                             }
                         ) .buttonStyle(BorderlessButtonStyle())
@@ -70,7 +70,7 @@ struct GameOverView: View {
                             },
                             label: {
                                     Text(quitGame)
-                                    .font(.custom("SigismundoDiFanti", size: 30))
+                                    .font(.custom(ParameterConstants.sigismundoFont, size: 30))
                                     .foregroundColor(isHoveringQuit ? Color("MenuBlue") : Color.white)
                             }
                         ) .buttonStyle(BorderlessButtonStyle())

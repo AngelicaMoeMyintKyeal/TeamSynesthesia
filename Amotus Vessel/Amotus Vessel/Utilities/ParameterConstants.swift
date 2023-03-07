@@ -16,4 +16,7 @@ struct ParameterConstants {
     static let englishPrologueVid: String = "PrologueEng"
     static let italianPrologueVid: String = "PrologueIta"
     static let koreanPrologueVid: String = "PrologueKorea"
+    
+    static let immortalFont: String = "IMMORTAL"
+    static let sigismundoFont: String = "SigismundoDiFanti"
 }

@@ -38,7 +38,7 @@ struct MenuView: View {
                     
                     Spacer()
                     Text("Amotus Vessel")
-                        .font(.custom("IMMORTAL", size: 200))
+                        .font(.custom(ParameterConstants.immortalFont, size: 200))
                         .shadow(color: .white, radius: 20)
 
                               
@@ -51,7 +51,7 @@ struct MenuView: View {
                         },
                         label: {
                                 Text(newGame)
-                                .font(.custom("SigismundoDiFanti", size: 30))
+                                .font(.custom(ParameterConstants.sigismundoFont, size: 30))
                                 .foregroundColor(isHoveringNewGame ? Color("MenuBlue") : Color.white)
                         }
                         
@@ -70,7 +70,7 @@ struct MenuView: View {
                         },
                         label: {
                                 Text(quitGame)
-                                .font(.custom("SigismundoDiFanti", size: 30))
+                                .font(.custom(ParameterConstants.sigismundoFont, size: 30))
                                 .foregroundColor(isHoveringQuit ? Color("MenuBlue") : Color.white)
                         }
                         
