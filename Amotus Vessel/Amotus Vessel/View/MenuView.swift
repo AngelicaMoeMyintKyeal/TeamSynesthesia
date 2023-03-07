@@ -66,8 +66,7 @@ struct MenuView: View {
                         
                     Button(
                         action: {
-                            // write action
-                            print("Quit Button is Clicked")
+                            NSApplication.shared.terminate(nil)
                         },
                         label: {
                                 Text(quitGame)
