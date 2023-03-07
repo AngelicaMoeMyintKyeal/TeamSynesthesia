@@ -73,17 +73,10 @@ class GamePad {
     }
 }
 
-enum direction {
-    case left
-    case right
-}
-
 protocol InputDelegate: AnyObject {
     var isJumping: Bool { get }
     var isAttacking: Bool { get }
-    var isMoving: Bool { get }
     
     func jump()
     func attack()
-    func move(direction: direction)
 }
