@@ -48,11 +48,8 @@ class GamePad {
         
         self.movementDirection = gamepad.dpad
         let dPadUp = gamepad.dpad.up
-        let dPadLeft = gamepad.dpad.left
-        let dPadRight = gamepad.dpad.right
         let buttonA = gamepad.buttonA // Cross on Playstation
         let buttonB = gamepad.buttonB // Circle on Playstation
-//        let buttonX = gamepad.buttonX // Square on Playstation
         
         dPadUp.pressedChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
             if pressed && self.delegate?.isJumping == false {
@@ -60,20 +57,6 @@ class GamePad {
                 self.delegate?.jump()
             }
         }
-        
-//        dPadLeft.pressedChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
-//            if pressed && self.delegate?.isMoving == false {
-//                print("move left")
-//                self.delegate?.move(direction: .left)
-//            }
-//        }
-//
-//        dPadRight.pressedChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
-//            if pressed && self.delegate?.isMoving == false {
-//                print("move right")
-//                self.delegate?.move(direction: .right)
-//            }
-//        }
         
         buttonA.pressedChangedHandler = dPadUp.pressedChangedHandler
         
