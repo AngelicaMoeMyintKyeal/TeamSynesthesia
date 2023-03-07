@@ -31,7 +31,7 @@
 
 ## About The Project
 
- We will be creating a game that entertains users by letting them play in an emotions based game scene.
+Amotus vessel is a game born from the idea of telling a story about emotions. The project aims to show how emotions aren't just something that "happen" to us, but something people can use as energy to act. From this, we thought about making emotions an active element of gameplay.
 
 ## Game Name
 `
@@ -40,7 +40,7 @@ Amotus Vessel
 
 ## Game Description
 
-Write description of the game.
+Amotus Vessel is an action platformer with speedrun components. The player will be able to explore different environments (related to core emotions and randomly placed on the map), where our protagonist will encounter unique enemies and, by defeating them, obtain a damage boost, that resets if they take a hit. The goal of the game is to find the boss room and do this in the shortest amount of time possible, to be the fastest player and set the best time.
 
 ## Branches
 
@@ -68,19 +68,32 @@ Write description of the game.
 
 ## Roadmap
 
+- February 23rd 2023
+  - Internal Test Flight Release
+  
+- February 28th 2023
+  - External Test Flight Release One
+  
+- March 3rd 2023
+  - External Test Flight Release Two
+  
+- March 9th 2023
+  - External Test Flight Release Three (Final)
 
 ## Authors and Contributors
 
-- Main Game Creation Developers
-  - [Htet Myat Moe Myin Kyeal](https://github.com/AngelicaMoeMyintKyeal)
+- Game Creation Developers
+  - [Htet Myat Moe Myin Kyeal (Angelica)](https://github.com/AngelicaMoeMyintKyeal)
   - [Pierpaolo Siciliano](https://github.com/PierSic-dev)
-  - [Lara De Sena(Standby Developer)](https://github.com/kumoriheart)
+  - [Lara De Sena (Standby Developer)](https://github.com/kumoriheart)
   
-- Main Game Characters Design Artists
-  - [Salvatore Amato](https://github.com/Salvatore-Amato)
+- Game Characters Design Artists
   - [Anja Hysa](https://github.com/oceanjah)
   - [Lara De Sena](https://github.com/kumoriheart)
   - [Giovanni Mandato](https://github.com/GiovanniMandato)
+  
+- Content Writer and Creator
+  - [Salvatore Amato](https://github.com/Salvatore-Amato)
 
 ## License
 
