@@ -42,6 +42,9 @@ Amotus Vessel
 
 Amotus Vessel is an action platformer with speedrun components. The player will be able to explore different environments (related to core emotions and randomly placed on the map), where our protagonist will encounter unique enemies and, by defeating them, obtain a damage boost, that resets if they take a hit. The goal of the game is to find the boss room and do this in the shortest amount of time possible, to be the fastest player and set the best time.
 
+The Emperor's greed has thrown the Eight Kingdoms into chaos. The Source of the Emotions has been shattered and its fragments scattered everywhere. 
+Discover how this came to be, and choose your own path.
+
 ## Branches
 
 `main` - most stable branch and contains the final codes release
@@ -85,7 +88,6 @@ Amotus Vessel is an action platformer with speedrun components. The player will 
 - Game Creation Developers
   - [Htet Myat Moe Myin Kyeal (Angelica)](https://github.com/AngelicaMoeMyintKyeal)
   - [Pierpaolo Siciliano](https://github.com/PierSic-dev)
-  - [Lara De Sena (Standby Developer)](https://github.com/kumoriheart)
   
 - Game Characters Design Artists
   - [Anja Hysa](https://github.com/oceanjah)
