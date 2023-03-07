@@ -65,7 +65,7 @@ struct GameOverView: View {
                             .frame(height: 80)
                         Button(
                             action: {
-                                // write action
+                                NSApplication.shared.terminate(nil)
                                 print("Quit Game Button is Clicked")
                             },
                             label: {
