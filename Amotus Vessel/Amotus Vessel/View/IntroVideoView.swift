@@ -88,7 +88,7 @@ struct SkipButtonView: View {
                         },
                         label: {
                             Text(skipButton)
-                            .font(.custom("SigismundoDiFanti", size: 30))
+                                .font(.custom(ParameterConstants.sigismundoFont, size: 30))
                             .foregroundColor(isHoveringSkip ? Color("MenuBlue") : Color.red)
                             }
                         
