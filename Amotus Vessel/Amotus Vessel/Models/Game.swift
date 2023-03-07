@@ -17,6 +17,7 @@ class Game {
             fatalError("Downcasting of the .sks custom class failed")
         }
         self.manager = manager
+        manager.gamePad = gamePad
         
         guard let player = self.manager.entityManager.entities["player"] as? Player else {
             fatalError("Downcasting of Player failed")
