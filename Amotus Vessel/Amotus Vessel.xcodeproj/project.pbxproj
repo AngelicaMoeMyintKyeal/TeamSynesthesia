@@ -21,7 +21,9 @@
 		88633C7429AFA5440095FFED /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7329AFA5440095FFED /* Sprite.swift */; };
 		88633C7629AFA5A30095FFED /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7529AFA5A30095FFED /* Physics.swift */; };
 		88633C7829AFA7EC0095FFED /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88633C7729AFA7EC0095FFED /* Platform.swift */; };
-		AC28124829B87B8000D663BE /* IntroVideoKorean.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC28124729B87B8000D663BE /* IntroVideoKorean.mp4 */; };
+		AC1CBC8129B8B43A00FAD11B /* IntroVideoIta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC1CBC7E29B8B43A00FAD11B /* IntroVideoIta.mp4 */; };
+		AC1CBC8229B8B43A00FAD11B /* IntroVideoKorean.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC1CBC7F29B8B43A00FAD11B /* IntroVideoKorean.mp4 */; };
+		AC1CBC8329B8B43A00FAD11B /* IntroVideoEng.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC1CBC8029B8B43A00FAD11B /* IntroVideoEng.mp4 */; };
 		AC6CC34E29B2182600BC9047 /* IMMORTAL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC4EA25B29B216D200D22BF6 /* IMMORTAL.ttf */; };
 		AC6CC34F29B2182900BC9047 /* SigismundoDiFanti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC4EA25C29B216D200D22BF6 /* SigismundoDiFanti.ttf */; };
 		AC6CC35129B5DCE400BC9047 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6CC35029B5DCE400BC9047 /* GameOverView.swift */; };
@@ -39,8 +41,6 @@
 		ACC2787629B11CAD00827910 /* IntroVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2787529B11CAD00827910 /* IntroVideoView.swift */; };
 		ACD84FA029B148D000F01D00 /* VideoPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD84F9F29B148D000F01D00 /* VideoPlayerManager.swift */; };
 		ACD84FA229B1E42700F01D00 /* OnboardingParticleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD84FA129B1E42700F01D00 /* OnboardingParticleScene.swift */; };
-		ACD84FA529B1F1BB00F01D00 /* IntroVideoIta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ACD84FA329B1F1BB00F01D00 /* IntroVideoIta.mp4 */; };
-		ACD84FA629B1F1BB00F01D00 /* IntroVideoEng.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ACD84FA429B1F1BB00F01D00 /* IntroVideoEng.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +61,9 @@
 		88633C7329AFA5440095FFED /* Sprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
 		88633C7529AFA5A30095FFED /* Physics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
 		88633C7729AFA7EC0095FFED /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
-		AC28124729B87B8000D663BE /* IntroVideoKorean.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideoKorean.mp4; sourceTree = "<group>"; };
+		AC1CBC7E29B8B43A00FAD11B /* IntroVideoIta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideoIta.mp4; sourceTree = "<group>"; };
+		AC1CBC7F29B8B43A00FAD11B /* IntroVideoKorean.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideoKorean.mp4; sourceTree = "<group>"; };
+		AC1CBC8029B8B43A00FAD11B /* IntroVideoEng.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideoEng.mp4; sourceTree = "<group>"; };
 		AC4EA25B29B216D200D22BF6 /* IMMORTAL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMMORTAL.ttf; sourceTree = "<group>"; };
 		AC4EA25C29B216D200D22BF6 /* SigismundoDiFanti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SigismundoDiFanti.ttf; sourceTree = "<group>"; };
 		AC6CC35029B5DCE400BC9047 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
@@ -81,8 +83,6 @@
 		ACC2787529B11CAD00827910 /* IntroVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVideoView.swift; sourceTree = "<group>"; };
 		ACD84F9F29B148D000F01D00 /* VideoPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerManager.swift; sourceTree = "<group>"; };
 		ACD84FA129B1E42700F01D00 /* OnboardingParticleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingParticleScene.swift; sourceTree = "<group>"; };
-		ACD84FA329B1F1BB00F01D00 /* IntroVideoIta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideoIta.mp4; sourceTree = "<group>"; };
-		ACD84FA429B1F1BB00F01D00 /* IntroVideoEng.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideoEng.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				4FAAFC4029B1FE06002CD5DE /* Amotus-Vessel-Info.plist */,
-				ACD84FA429B1F1BB00F01D00 /* IntroVideoEng.mp4 */,
-				ACD84FA329B1F1BB00F01D00 /* IntroVideoIta.mp4 */,
-				AC28124729B87B8000D663BE /* IntroVideoKorean.mp4 */,
+				AC1CBC8029B8B43A00FAD11B /* IntroVideoEng.mp4 */,
+				AC1CBC7E29B8B43A00FAD11B /* IntroVideoIta.mp4 */,
+				AC1CBC7F29B8B43A00FAD11B /* IntroVideoKorean.mp4 */,
 				88633C4C29AF8BC00095FFED /* Amotus_VesselApp.swift */,
 				88633C4E29AF8BC00095FFED /* ContentView.swift */,
 				4FAAFC3D29B1FDAD002CD5DE /* Fonts */,
@@ -314,11 +314,11 @@
 				ACC2786329B0AAA500827910 /* OnboardingParticle.sks in Resources */,
 				88633C6A29AF93730095FFED /* FinalBossLevel.sks in Resources */,
 				AC6CC34F29B2182900BC9047 /* SigismundoDiFanti.ttf in Resources */,
-				AC28124829B87B8000D663BE /* IntroVideoKorean.mp4 in Resources */,
-				ACD84FA529B1F1BB00F01D00 /* IntroVideoIta.mp4 in Resources */,
-				ACD84FA629B1F1BB00F01D00 /* IntroVideoEng.mp4 in Resources */,
 				ACC2785E29B0AAA500827910 /* FlameParticle.sks in Resources */,
 				ACC2786F29B0AB9300827910 /* Localizable.strings in Resources */,
+				AC1CBC8129B8B43A00FAD11B /* IntroVideoIta.mp4 in Resources */,
+				AC1CBC8329B8B43A00FAD11B /* IntroVideoEng.mp4 in Resources */,
+				AC1CBC8229B8B43A00FAD11B /* IntroVideoKorean.mp4 in Resources */,
 				88633C5429AF8BC20095FFED /* Preview Assets.xcassets in Resources */,
 				ACC2785D29B0AAA500827910 /* Rain.sks in Resources */,
 				88633C6129AF8DE80095FFED /* Assets.xcassets in Resources */,
@@ -498,7 +498,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Amotus Vessel/Preview Content\"";
-				DEVELOPMENT_TEAM = AVG85342HW;
+				DEVELOPMENT_TEAM = 4Y299ULQLV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -527,7 +527,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Amotus Vessel/Preview Content\"";
-				DEVELOPMENT_TEAM = AVG85342HW;
+				DEVELOPMENT_TEAM = 4Y299ULQLV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
