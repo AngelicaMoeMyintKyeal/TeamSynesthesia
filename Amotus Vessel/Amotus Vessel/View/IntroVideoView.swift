@@ -25,7 +25,7 @@ struct IntroVideoView: View {
             default:
                 AVPlayerControllerRepresented(videoPlayer: videoPlayerManager.videoPlayerEng)
             }
-            SkipButtonView()
+//            SkipButtonView()
         }
         .onAppear() {
             switch deviceLang {
@@ -39,6 +39,17 @@ struct IntroVideoView: View {
                 videoPlayerManager.playEngVideo()
             }
         }
+        .onDisappear() {
+            videoPlayerManager.videoPlayerEng.pause()
+            MenuView()
+                .transition(.slide)
+        }
+        
+//        if videoPlayerManager.videoDone {
+////            NavigationLink("SKIP", destination: MenuView(), isActive: $videoPlayerManager.videoDone)
+//            MenuView()
+//                .transition(AnyTransition.move(edge: .trailing)).animation(.default)
+//        }
     }
 }
 
@@ -56,12 +67,6 @@ struct AVPlayerControllerRepresented : NSViewRepresentable {
         
     }
 }
-
-//struct IntroVideoView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        IntroVideoView()
-//    }
-//}
 
 struct SkipButtonView: View {
     let skipButton: LocalizedStringKey = "Skip"
