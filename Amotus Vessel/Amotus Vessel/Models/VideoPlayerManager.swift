@@ -13,6 +13,7 @@ class VideoPlayerManager: ObservableObject {
     
     @Published private var playing = false
     @Published var videoDone = false
+    var viewState: ViewHandler
     
     let videoPlayerEng = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoEng", withExtension: "mp4")!)
     let videoPlayerIta = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoIta", withExtension: "mp4")!)
@@ -20,17 +21,13 @@ class VideoPlayerManager: ObservableObject {
     
     private var cancellables = Set<AnyCancellable>()
     
-    init() {
+    init(viewState: ViewHandler) {
+        self.viewState = viewState
         NotificationCenter.default.publisher(for: .AVPlayerItemDidPlayToEndTime)
             .sink { (_) in
                 self.videoDone = true
                 print("Video done")
-                DispatchQueue.main.async {
-                    self.videoDone = false //reset it on the next run loop
-                }
-//                DispatchQueue.main.async {
-//                    self.videoDone = false //reset it on the next run loop
-//                }
+                self.viewState.viewState = .menu
             }.store(in: &cancellables)
     }
     
@@ -48,13 +45,4 @@ class VideoPlayerManager: ObservableObject {
             videoPlayerKorean.play()
             playing = true
     }
-        
-//    func playPause() {
-//        if playing {
-//            videoPlayerEng.pause()
-//        } else {
-//            videoPlayerEng.play()
-//        }
-//        playing.toggle()
-//    }
 }

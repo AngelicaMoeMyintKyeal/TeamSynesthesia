@@ -9,13 +9,20 @@ import AVKit
 import SwiftUI
 
 struct IntroVideoView: View {
-    @StateObject var videoPlayerManager = VideoPlayerManager()
+    @ObservedObject var videoPlayerManager: VideoPlayerManager
+    @ObservedObject var viewState: ViewHandler
+    
     
     var deviceLang: String
     
+    init(viewState: ViewHandler, deviceLang: String) {
+        self.viewState = viewState
+        self.videoPlayerManager = VideoPlayerManager(viewState: viewState)
+        self.deviceLang = deviceLang
+    }
+    
     var body: some View {
         ZStack {
-            //                AVPlayerControllerRepresented(videoPlayer: videoPlayer)
             switch deviceLang {
             case ParameterConstants.englishLanguage: AVPlayerControllerRepresented(videoPlayer:         videoPlayerManager.videoPlayerEng)
             case ParameterConstants.italianLanguage:
@@ -40,16 +47,9 @@ struct IntroVideoView: View {
             }
         }
         .onDisappear() {
-            videoPlayerManager.videoPlayerEng.pause()
-            MenuView()
-                .transition(.slide)
+//            videoPlayerManager.videoPlayerEng.pause()
+            self.viewState.viewState = .menu
         }
-        
-//        if videoPlayerManager.videoDone {
-////            NavigationLink("SKIP", destination: MenuView(), isActive: $videoPlayerManager.videoDone)
-//            MenuView()
-//                .transition(AnyTransition.move(edge: .trailing)).animation(.default)
-//        }
     }
 }
 
@@ -82,7 +82,7 @@ struct SkipButtonView: View {
                         .frame(height: 100)
                     Button(
                         action: {
-                            // write action
+                            
                             print("Skip Button is Clicked")
                         },
                         label: {
