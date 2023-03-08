@@ -16,7 +16,7 @@ struct GamemotionApp: App {
             case .intro:
                 IntroVideoView(viewState: currentView, deviceLang: Locale.current.languageCode ?? ParameterConstants.englishLanguage)
             case .menu:
-                MenuView()
+                MenuView(currentView: currentView)
             case .game:
                 ContentView()
             case .gameOver:
