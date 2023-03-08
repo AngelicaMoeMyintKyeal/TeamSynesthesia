@@ -9,40 +9,37 @@ import AVKit
 import SwiftUI
 
 struct IntroVideoView: View {
-       
     var deviceLang: String
     @StateObject var videoPlayerManager = VideoPlayerManager()
-   
     
     var body: some View {
         
-            ZStack {
-//                AVPlayerControllerRepresented(videoPlayer: videoPlayer)
-                
-                switch deviceLang {
-                case ParameterConstants.englishLanguage: AVPlayerControllerRepresented(videoPlayer:         videoPlayerManager.videoPlayerEng)
-                case ParameterConstants.italianLanguage:
-                    AVPlayerControllerRepresented(videoPlayer: videoPlayerManager.videoPlayerIta)
-                case ParameterConstants.koreanLanguage:
-                    AVPlayerControllerRepresented(videoPlayer: videoPlayerManager.videoPlayerKorean)
-                default:
-                    AVPlayerControllerRepresented(videoPlayer: videoPlayerManager.videoPlayerEng)
-                }
-                
-                SkipButtonView()
+        ZStack {
+            //                AVPlayerControllerRepresented(videoPlayer: videoPlayer)
+            switch deviceLang {
+            case ParameterConstants.englishLanguage: AVPlayerControllerRepresented(videoPlayer:         videoPlayerManager.videoPlayerEng)
+            case ParameterConstants.italianLanguage:
+                AVPlayerControllerRepresented(videoPlayer: videoPlayerManager.videoPlayerIta)
+            case ParameterConstants.koreanLanguage:
+                AVPlayerControllerRepresented(videoPlayer: videoPlayerManager.videoPlayerKorean)
+            default:
+                AVPlayerControllerRepresented(videoPlayer: videoPlayerManager.videoPlayerEng)
             }
-            .onAppear() {
-                switch deviceLang {
-                case ParameterConstants.englishLanguage:
-                    videoPlayerManager.playEngVideo()
-                case ParameterConstants.italianLanguage:
-                    videoPlayerManager.playItaVideo()
-                case ParameterConstants.koreanLanguage:
-                    videoPlayerManager.playKoreanVideo()
-                default:
-                    videoPlayerManager.playEngVideo()
-                }
+            
+            SkipButtonView()
+        }
+        .onAppear() {
+            switch deviceLang {
+            case ParameterConstants.englishLanguage:
+                videoPlayerManager.playEngVideo()
+            case ParameterConstants.italianLanguage:
+                videoPlayerManager.playItaVideo()
+            case ParameterConstants.koreanLanguage:
+                videoPlayerManager.playKoreanVideo()
+            default:
+                videoPlayerManager.playEngVideo()
             }
+        }
     }
 }
 
@@ -68,13 +65,11 @@ struct AVPlayerControllerRepresented : NSViewRepresentable {
 //}
 
 struct SkipButtonView: View {
-    
     let skipButton: LocalizedStringKey = "Skip"
     
     @State private var isHoveringSkip = false
     
     var body: some View {
-    
         GeometryReader { geometry in
             VStack {
                 Spacer()
@@ -89,19 +84,17 @@ struct SkipButtonView: View {
                         label: {
                             Text(skipButton)
                                 .font(.custom(ParameterConstants.sigismundoFont, size: 30))
-                            .foregroundColor(isHoveringSkip ? Color("MenuBlue") : Color.red)
-                            }
-                        
+                                .foregroundColor(isHoveringSkip ? Color("MenuBlue") : Color.red)
+                        }
                     )
                     .cornerRadius(8)
                     .buttonStyle(BorderlessButtonStyle())
-                        .padding(.horizontal, 20)
-                        .onHover { hovering in
-                            withAnimation(.easeInOut(duration: 0.2)) {
-                                isHoveringSkip = hovering
-                            }
+                    .padding(.horizontal, 20)
+                    .onHover { hovering in
+                        withAnimation(.easeInOut(duration: 0.2)) {
+                            isHoveringSkip = hovering
                         }
-                
+                    }
                 }
             }
         }

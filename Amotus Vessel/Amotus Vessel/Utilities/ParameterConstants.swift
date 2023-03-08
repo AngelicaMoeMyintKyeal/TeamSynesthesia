@@ -8,7 +8,6 @@
 import Foundation
 
 struct ParameterConstants {
-    
     static let englishLanguage: String = "en"
     static let italianLanguage: String = "it"
     static let koreanLanguage: String = "ko"

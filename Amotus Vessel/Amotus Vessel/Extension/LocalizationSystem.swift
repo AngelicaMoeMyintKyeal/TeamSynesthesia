@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 class LocalizationSystem: NSObject {
-    
     static let Localizer = LocalizationSystem()
     
     func localize() {
