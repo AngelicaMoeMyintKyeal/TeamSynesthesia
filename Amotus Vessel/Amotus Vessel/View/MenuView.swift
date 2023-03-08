@@ -55,6 +55,7 @@ struct MenuView: View {
                             }
                         }
                     Spacer()
+                        .frame(height: 50)
                     Button(
                         action: {
                             NSApplication.shared.terminate(nil)
