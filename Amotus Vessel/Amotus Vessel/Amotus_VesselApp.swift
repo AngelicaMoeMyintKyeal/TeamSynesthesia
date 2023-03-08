@@ -9,12 +9,29 @@ import SwiftUI
 
 @main
 struct GamemotionApp: App {
+    @StateObject var currentView = ViewHandler()
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-
-            //MARK: Start of the Application
-            IntroVideoView(deviceLang: Locale.current.languageCode ?? ParameterConstants.englishLanguage)
+            switch currentView.viewState {
+            case .intro:
+                IntroVideoView(viewState: currentView, deviceLang: Locale.current.languageCode ?? ParameterConstants.englishLanguage)
+            case .menu:
+                MenuView()
+            case .game:
+                ContentView()
+            case .gameOver:
+                GameOverView()
+            }
         }
+    }
+}
+
+class ViewHandler: ObservableObject {
+    @Published var viewState: CurrentView = .intro
+    enum CurrentView {
+        case intro
+        case menu
+        case game
+        case gameOver
     }
 }
