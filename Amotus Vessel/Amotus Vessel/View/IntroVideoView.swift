@@ -9,11 +9,11 @@ import AVKit
 import SwiftUI
 
 struct IntroVideoView: View {
-    var deviceLang: String
     @StateObject var videoPlayerManager = VideoPlayerManager()
     
+    var deviceLang: String
+    
     var body: some View {
-        
         ZStack {
             //                AVPlayerControllerRepresented(videoPlayer: videoPlayer)
             switch deviceLang {
@@ -25,7 +25,6 @@ struct IntroVideoView: View {
             default:
                 AVPlayerControllerRepresented(videoPlayer: videoPlayerManager.videoPlayerEng)
             }
-            
             SkipButtonView()
         }
         .onAppear() {
