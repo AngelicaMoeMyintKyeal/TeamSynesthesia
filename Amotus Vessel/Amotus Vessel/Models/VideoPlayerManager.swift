@@ -14,7 +14,7 @@ class VideoPlayerManager: ObservableObject {
     
     let videoPlayerEng = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoEng", withExtension: "mp4")!)
     let videoPlayerIta = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoIta", withExtension: "mp4")!)
-    let videoPlayerKorean = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoEng", withExtension: "mp4")!)
+    let videoPlayerKorean = AVPlayer(url: Bundle.main.url(forResource: "IntroVideoKorean", withExtension: "mp4")!)
     
     func playEngVideo() {
             videoPlayerEng.play()
