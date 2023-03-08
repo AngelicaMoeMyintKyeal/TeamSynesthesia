@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "PlayerIdle2.png",
+      "filename" : "playerIdle2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
