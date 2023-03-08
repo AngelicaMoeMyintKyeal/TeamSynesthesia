@@ -28,6 +28,9 @@ class VideoPlayerManager: ObservableObject {
                 DispatchQueue.main.async {
                     self.videoDone = false //reset it on the next run loop
                 }
+//                DispatchQueue.main.async {
+//                    self.videoDone = false //reset it on the next run loop
+//                }
             }.store(in: &cancellables)
     }
     

@@ -25,7 +25,7 @@ struct IntroVideoView: View {
             default:
                 AVPlayerControllerRepresented(videoPlayer: videoPlayerManager.videoPlayerEng)
             }
-            SkipButtonView()
+//            SkipButtonView()
         }
         .onAppear() {
             switch deviceLang {
