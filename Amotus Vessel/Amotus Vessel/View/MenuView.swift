@@ -12,45 +12,37 @@ struct MenuView: View {
     
     let newGame: LocalizedStringKey = "New Game"
     let quitGame: LocalizedStringKey = "Quit"
-   
+    let MenuBlue = Color("MenuBlue")
+    
     @State private var isHoveringNewGame = false
     @State private var isHoveringQuit = false
-    let MenuBlue = Color("MenuBlue")
-
+    
     var scene: SKScene {
-            let scene = OnboardingParticleScene()
-            scene.scaleMode = .resizeFill
-            scene.backgroundColor = .clear
-            return scene
-        }
+        let scene = OnboardingParticleScene()
+        scene.scaleMode = .resizeFill
+        scene.backgroundColor = .clear
+        return scene
+    }
     
     var body: some View {
-    
         ZStack {
-            
             GeometryReader { geometry in
-                
                 SpriteView(scene: scene, options: [.allowsTransparency])
                     .ignoresSafeArea(.all)
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-                
                 VStack {
-                    
                     Spacer()
                     Text("Amotus Vessel")
                         .font(.custom(ParameterConstants.immortalFont, size: 200))
                         .shadow(color: .white, radius: 20)
-
-                              
                     Spacer()
-                    
                     Button(
                         action: {
                             // write action
                             print("Play Button is Clicked")
                         },
                         label: {
-                                Text(newGame)
+                            Text(newGame)
                                 .font(.custom(ParameterConstants.sigismundoFont, size: 30))
                                 .foregroundColor(isHoveringNewGame ? Color("MenuBlue") : Color.white)
                         }
@@ -63,17 +55,15 @@ struct MenuView: View {
                             }
                         }
                     Spacer()
-                        
                     Button(
                         action: {
                             NSApplication.shared.terminate(nil)
                         },
                         label: {
-                                Text(quitGame)
+                            Text(quitGame)
                                 .font(.custom(ParameterConstants.sigismundoFont, size: 30))
                                 .foregroundColor(isHoveringQuit ? Color("MenuBlue") : Color.white)
                         }
-                        
                     ) .buttonStyle(BorderlessButtonStyle())
                         .padding(.horizontal, 20)
                         .onHover { hovering in
@@ -82,15 +72,14 @@ struct MenuView: View {
                             }
                         }
                     Spacer()
-
                 }
                 .frame(width: geometry.size.width, height: geometry.size.height)
-                    }
+            }
             .background(
                 Image("MenuBackground")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-        )
+            )
         }
     }
 }
