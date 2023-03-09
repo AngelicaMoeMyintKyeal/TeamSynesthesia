@@ -9,11 +9,11 @@ import SwiftUI
 import SpriteKit
 
 struct MenuView: View {
-    
     let newGame: LocalizedStringKey = "New Game"
     let quitGame: LocalizedStringKey = "Quit"
     let MenuBlue = Color("MenuBlue")
     
+    @ObservedObject var currentView: ViewHandler
     @State private var isHoveringNewGame = false
     @State private var isHoveringQuit = false
     
@@ -38,7 +38,8 @@ struct MenuView: View {
                     Spacer()
                     Button(
                         action: {
-                            // write action
+                            // FIXME: it works but it requires 2 clicks
+                            self.currentView.viewState = .game
                             print("Play Button is Clicked")
                         },
                         label: {
@@ -87,6 +88,6 @@ struct MenuView: View {
 
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuView()
+        MenuView(currentView: ViewHandler())
     }
 }
