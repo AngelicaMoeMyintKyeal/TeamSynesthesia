@@ -19,11 +19,16 @@ struct ContentView: View {
     }
     
     var body: some View {
+#if DEBUG
         SpriteView(
             scene: scene,
             debugOptions: [.showsFPS, .showsPhysics, .showsNodeCount]
         )
         .frame(minWidth: 756, minHeight: 472.5)
+#else
+        SpriteView(scene: scene)
+            .frame(minWidth: 756, minHeight: 472.5)
+#endif
     }
 }
 
